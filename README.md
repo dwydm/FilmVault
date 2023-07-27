@@ -20,3 +20,12 @@ https://github.com/dwydm/FilmValut-Client.git
 To <b>application.properties</b> simply add <b>springdoc.swagger-ui.path=/swagger-ui.html</b></p>
 
 ![image](https://github.com/dwydm/FilmVault/assets/106226811/54179ecc-e558-4c0c-9c69-c23aa0beafef)
+
+<h3>Group Project</h3>
+<p>FilmVault was and still is a group project.</p>
+<p>My involvement includes the DTO system, MapStruct implementation, DB data initialization, co-creating entities, REST endpoints, methods for communication with external APIs, search optimization, app requirements, and business logic.</p>
+
+<h4>Other co-creators</h4>
+<p><a href="https://github.com/k2esone">k2esone</a></p>
+<p><a href="https://github.com/RadBia">RadBia</a></p>
+<p><a href="https://github.com/MWolok">MWolok</a></p>
