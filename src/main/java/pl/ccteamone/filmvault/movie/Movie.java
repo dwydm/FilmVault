@@ -2,6 +2,7 @@ package pl.ccteamone.filmvault.movie;
 
 import jakarta.persistence.*;
 import lombok.*;
+import pl.ccteamone.filmvault.media.Media;
 import pl.ccteamone.filmvault.genre.Genre;
 import pl.ccteamone.filmvault.region.Region;
 import pl.ccteamone.filmvault.vodplatform.VODPlatform;
@@ -15,7 +16,8 @@ import java.util.Set;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Movie {
+//@DiscriminatorValue("Movie")
+public class Movie extends Media {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

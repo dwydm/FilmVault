@@ -1,9 +1,8 @@
 package pl.ccteamone.filmvault.tvseries;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.format.annotation.DateTimeFormat;
+import pl.ccteamone.filmvault.media.Media;
 import pl.ccteamone.filmvault.genre.Genre;
 import pl.ccteamone.filmvault.region.Region;
 import pl.ccteamone.filmvault.vodplatform.VODPlatform;
@@ -17,7 +16,8 @@ import java.util.Set;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class TvSeries {
+//@DiscriminatorValue("TvSeries")
+public class TvSeries extends Media {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

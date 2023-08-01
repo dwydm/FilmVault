@@ -1,3 +1,13 @@
+GET http://localhost:8080/api/movies/search?query=robin
+
+###
+
+GET http://localhost:8080/api/movies/search?query=robin
+
+<> 2023-08-01T193538.500.html
+
+###
+
 GET http://localhost:8080/movies
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
@@ -510,28 +520,6 @@ Cookie: JSESSIONID=3CF9BCFBBE82F2E3B4202A0E64A7C8C6
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 <> 2023-06-20T201858.200.json
-
-###
-
-PATCH http://localhost:8080/api/movies/add/rating/39?rating=2
-Content-Length: 0
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Cookie: JSESSIONID=3CF9BCFBBE82F2E3B4202A0E64A7C8C6
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-06-20T201838.200.json
-
-###
-
-PATCH http://localhost:8080/api/movies/add/rating/39?rating=1
-Content-Length: 0
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Cookie: JSESSIONID=3CF9BCFBBE82F2E3B4202A0E64A7C8C6
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-06-20T201833.200.json
 
 ###
 
