@@ -2,5 +2,6 @@ package pl.ccteamone.filmvault.appuser;
 
 public enum Gender {
     MALE,
-    FEMALE
+    FEMALE,
+    UNDEFINED
 }

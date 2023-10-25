@@ -81,6 +81,4 @@ public class DatabaseDataFeeder {
 
 
     }
-
-    //TODO: uncomment to fill the DB -  commented to spare API usage
 }

@@ -23,12 +23,6 @@ public class AppUserController {
         this.jwtService = jwtService;
     }
 
-//    @PostMapping("/register")
-//    public AppUserDto createUser(@RequestBody AppUserCreationDto request) {
-//        log.info("user addition has been triggered: {}", request);
-//        return appUserService.createAppUser(request);
-//    }
-
     @PreAuthorize("hasAuthority('USER') or hasAuthority('ADMIN')")
     @PostMapping("/{username}/add-movie-title")
     public AppUserDto addMovieByTitleToUser(@PathVariable String username, @RequestParam String movieTitle,
@@ -125,24 +119,6 @@ public class AppUserController {
             throw new RuntimeException("Unauthorized access");
         }
     }
-
-
-    //TODO: UPDATE PROFILDTO TO FRONTEND
-//    @PreAuthorize("hasAuthority('USER') or hasAuthority('ADMIN')")
-//    @GetMapping("/userdata")
-//    public AppUserProfileDto getUserByUsername(@RequestParam String username,
-//                                        @RequestHeader("Authorization") String bearerToken) {
-//        log.info("someone asked for user with name - {}", username);
-//        String token = bearerToken.substring(7);
-//        String extractedUsername = jwtService.extractUserName(token);
-//        if (extractedUsername.equals(username)) {
-//            return appUserService.getUserDtoByUsernameProfileDTO(username);
-//        } else {
-//            throw new RuntimeException("Unauthorized access");
-//        }
-//    }
-
-    //TODO: logic for authorization
 
     @PreAuthorize("hasAuthority('USER') or hasAuthority('ADMIN')")
     @PatchMapping("/update")

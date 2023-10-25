@@ -28,9 +28,7 @@ public class TvSeries {
     private boolean adult;
     private String originLanguage;
     private String originCountry;
-//    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE,pattern = "dd/MM/yyyy")
     private LocalDate firstAirDate;
-//    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE,pattern = "dd/MM/yyyy")
     private LocalDate lastAirDate;
     private int seasons;
     private int episodes;

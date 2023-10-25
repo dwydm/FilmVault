@@ -143,9 +143,6 @@ public class TvSeriesService {
                         .collect(Collectors.toList()));
             }
 
-//            if (similarTvSeries.size() == 20) {
-//                break;
-//            }
         }
         return similarTvSeries.stream()
                 .collect(Collectors.toSet()).stream()

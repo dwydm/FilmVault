@@ -181,7 +181,7 @@ public class MovieService {
 
         return set1.size();
     }
-    // <- NGRAM SEARCH *** *** *** ***
+    //NGRAM search below
 
     public List<MovieDto> getNewestMovieList(Integer page) {
         List<MovieDto> movies = movieApiService.getMovieDiscoverList(page);
@@ -217,8 +217,6 @@ public class MovieService {
 
     private List<MovieDto> persistMovieDtoList(List<MovieDto> movies) {
         movies = movies.stream()
-/*                .filter(movieDto -> !existsByApiID(movieDto.getApiID()))
-                .toList().stream()*/
                 .map(this::createMovie)
                 .toList().stream()
                 .map(movieUpdate -> updateMovieDataFromApi(movieUpdate.getId(), movieUpdate))

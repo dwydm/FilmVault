@@ -43,7 +43,6 @@ public class VODPlatformService {
         return vodPlatformMapper.mapToVODPlatformDtoSet(platformRepository.findAll().stream()
                 .filter(vodPlatform -> vodPlatform.isActive()).collect(Collectors.toSet())).stream().toList();
     }
-    //TODO: create custom exception for handling missing VOD Platform
 
     public VODPlatformDto getVODPlatformDtoById(Long id) {
         Optional<VODPlatform> platform = platformRepository.findById(id);

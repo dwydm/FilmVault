@@ -70,16 +70,4 @@ public class MovieApiService {
         return movieMapper.mapToMovieDtoPage(apiMovieClient.getPopularMoviesPage(lang, page));
     }
 
-    /*
-        public List<Movie> getApiMovieByTitle(String title) throws JsonProcessingException {
-        List<Movie> movies = apiMovieClient.getMoviesTitleSearchPage(title);
-        for (Movie movie : movies) {
-            if (movieRepository.findByApiID(movie.getApiID()).isEmpty()) {
-                movieRepository.save(apiMovieClient.getApiMovieByMovieId(movie.getApiID()));
-            }
-        }
-        return movies;
-    }
-    */
-
 }
