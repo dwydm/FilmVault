@@ -142,9 +142,6 @@ public class MovieService {
                         .map(movieMapper::mapToMovieDto)
                         .collect(Collectors.toList()));
             }
-//            if (similarMovies.size() == PAGE_SIZE) {
-//                break;
-//            }
         }
         return similarMovies.stream()
                 .collect(Collectors.toSet()).stream()
@@ -193,7 +190,6 @@ public class MovieService {
         PageRequest pageRequest = PageRequest.of(page - 1, PAGE_SIZE, Sort.by(Sort.Direction.DESC, "releaseDate"));
         Page<Movie> moviePage = movieRepository.findAll(pageRequest);
         return moviePage.stream()
-/*                .toList().stream()*/
                 .map(movieMapper::mapToMovieDto)
                 .toList();
     }
@@ -217,8 +213,6 @@ public class MovieService {
 
     private List<MovieDto> persistMovieDtoList(List<MovieDto> movies) {
         movies = movies.stream()
-/*                .filter(movieDto -> !existsByApiID(movieDto.getApiID()))
-                .toList().stream()*/
                 .map(this::createMovie)
                 .toList().stream()
                 .map(movieUpdate -> updateMovieDataFromApi(movieUpdate.getId(), movieUpdate))

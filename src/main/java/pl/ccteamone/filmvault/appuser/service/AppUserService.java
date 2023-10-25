@@ -35,15 +35,6 @@ public class AppUserService {
     private final TvSeriesService tvSeriesService;
     private final VODPlatformService platformService;
 
-//    public AppUserDto createAppUser(AppUserCreationDto appUserCreationDto) {
-//        AppUser appUser = AppUser.builder()
-//                .email(appUserCreationDto.getEmail())
-//                .password(appUserCreationDto.getPassword())
-//                .username(appUserCreationDto.getUsername())
-//                .build();
-//        return appUserMapper.mapToAppUserDto(appUserRepository.save(appUser));
-//    }
-
     public AppUserDto addMovieByTitle(String username, String movieTitle) {
         AppUser appUser = appUserRepository.findByUsername(username)
                 .orElseThrow(() -> new EntityNotFoundException("AppUser not found, username: " + username));

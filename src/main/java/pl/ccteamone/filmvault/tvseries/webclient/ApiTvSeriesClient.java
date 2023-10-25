@@ -17,13 +17,6 @@ import java.util.*;
 @Component
 @Slf4j
 public class ApiTvSeriesClient {
-        /*
-    https://api.themoviedb.org/3/tv/11?api_key=
-    https://api.themoviedb.org/3/search/tv?api_key=&query=
-    https://api.themoviedb.org/3/tv/222/watch/providers?api_key=
-    https://api.themoviedb.org/3/discover/tv?api_key=&language=en-US&popular&sort_by=popularity.desc
-
-     */
 
     private static final String API_TVSERIES_URL = "https://api.themoviedb.org/3/tv/";
     private static final String API_DISCOVER_URL = "https://api.themoviedb.org/3/discover/tv";

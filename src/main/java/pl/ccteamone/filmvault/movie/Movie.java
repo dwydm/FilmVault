@@ -16,7 +16,6 @@ import java.util.Set;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-//@DiscriminatorValue("Movie")
 public class Movie extends Media {
 
     @Id

@@ -131,12 +131,12 @@ public class TvSeriesService {
             String name = tvSerie.getName().toLowerCase();
             String lowercaseQuery = query.toLowerCase();
 
-            List<String> nameNGrams = generateNGrams(name, 2); // licznik prawdopodobieństwa dla title
-            List<String> queryNGrams = generateNGrams(lowercaseQuery, 2);  // licznik prawdopodobieństwa dla query
+            List<String> nameNGrams = generateNGrams(name, 2);
+            List<String> queryNGrams = generateNGrams(lowercaseQuery, 2);
 
             int commonNGrams = countCommonNGrams(nameNGrams, queryNGrams);
 
-            if (commonNGrams >= 2) { // <-- Licznik prawdopodobieństwa
+            if (commonNGrams >= 2) {
                 similarTvSeries.addAll(tvSeries.stream()
                         .filter(match -> match.getName().equalsIgnoreCase(tvSerie.getName()))
                         .map(tvSeriesMapper::mapToTvSeriesDto)
@@ -217,8 +217,6 @@ public class TvSeriesService {
 
     private List<TvSeriesDto> persistTvSeriesDtoList(List<TvSeriesDto> tvSeries) {
         tvSeries = tvSeries.stream()
-                /*             .filter(tvSeriesDto -> !existsByApiID(tvSeriesDto.getApiID()))
-                             .toList().stream()*/
                 .map(this::createTvSeries)
                 .toList().stream()
                 .map(tvUpdate -> updateTvSeriesDataFromApi(tvUpdate.getId(), tvUpdate))

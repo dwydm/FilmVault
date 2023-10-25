@@ -18,13 +18,6 @@ import java.util.*;
 @Slf4j
 public class ApiMovieClient {
 
-    /*
-    https://api.themoviedb.org/3/movie/22?api_key=
-    https://api.themoviedb.org/3/search/movie?api_key=&query=
-    https://api.themoviedb.org/3/movie/22/watch/providers?api_key=
-    https://api.themoviedb.org/3/discover/movie?api_key=&language=en-US&page=1&sort_by=popularity.desc
-
-     */
     private static final String API_MOVIE_URL = "https://api.themoviedb.org/3/movie/";
     private static final String API_DISCOVER_URL = "https://api.themoviedb.org/3/discover/movie";
     private static final String API_SEARCH_URL = "https://api.themoviedb.org/3/search/movie";
