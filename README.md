@@ -22,10 +22,11 @@ To <b>application.properties</b> simply add <b>springdoc.swagger-ui.path=/swagge
 ![image](https://github.com/dwydm/FilmVault/assets/106226811/54179ecc-e558-4c0c-9c69-c23aa0beafef)
 
 <h3>Group Project</h3>
-<p>FilmVault was and still is a group project.</p>
-<p>My involvement includes the DTO system, MapStruct implementation, DB data initialization, co-creating entities, REST endpoints, methods for communication with external APIs, search optimization, app requirements, and business logic.</p>
+<a href="https://github.com/dwydm/FilmVault" target="_blank">FilmVault - Backend</a></p>
+<p></p>As the group and project leader, I was responsible for scheduling team meetings and creating an optimal working schedule, as well as providing a clear vision of the application throughout the production process.</p>
+<p>In the project, my involvement included the DTO system, MapStruct implementation, DB data initialization, co-creating entities, REST endpoints, methods for communication with external APIs, search optimization, app requirements, and business logic.</p>
 
 <h4>Other co-creators</h4>
-<p><a href="https://github.com/k2esone" target="_blank">k2esone</a></p>
-<p><a href="https://github.com/RadBia" target="_blank">RadBia</a></p>
-<p><a href="https://github.com/MWolok" target="_blank">MWolok</a></p>
+<p><a href="https://github.com/k2esone" target="_blank">k2esone</a> - implementation of the security, JTW Auth, ngram search</p>
+<p><a href="https://github.com/RadBia" target="_blank">RadBia</a> - DB logic, co-creating entieties and communication with external API</p>
+<p><a href="https://github.com/MWolok" target="_blank">MWolok</a> - designing frontend part of the application <a href="https://github.com/dwydm/FilmValut-Client" target="_blank">FilmVault - Client</a></p>
