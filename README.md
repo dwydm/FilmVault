@@ -6,7 +6,7 @@
 <h4>Other co-creators</h4>
 <p><a href="https://github.com/k2esone" target="_blank">k2esone</a> - implementation of the security, JTW Auth, ngram search</p>
 <p><a href="https://github.com/RadBia" target="_blank">RadBia</a> - DB logic, co-creating entieties and communication with external API</p>
-<p><a href="https://github.com/MWolok" target="_blank">MWolok</a> - designing frontend part of the application <a href="https://github.com/dwydm/FilmValut-Client" target="_blank">FilmVault - Client</a></p>**
+<p><a href="https://github.com/MWolok" target="_blank">MWolok</a> - designing frontend part of the application <a href="https://github.com/dwydm/FilmValut-Client" target="_blank">FilmVault - Client</a></p>
 
 <h1>FilmVault - Backend</h2>
 <p>FilmVault is a Java and React application that provides users with access to actual and up-to-date streaming services for requested movies and TV series. FV allows users to register, select desired VOD platforms, and add already-seen movies and series to their accounts. The application utilizes an external movie database API to fetch crucial movie details.</p>
